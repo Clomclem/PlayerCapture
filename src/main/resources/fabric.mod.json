@@ -10,15 +10,16 @@
   ],
   "contact": {
     "homepage": "https://github.com/Clomclem/PlayerCapture",
+    "issues": "https://github.com/Clomclem/PlayerCapture/issues",
     "sources": "https://github.com/Clomclem/PlayerCapture"
   },
 
   "license": "MIT",
   "icon": "assets/playercapture/icon.png",
 
-  "environment": "*",
+  "environment": "server",
   "entrypoints": {
-    "main": [
+    "server": [
       "me.clomclem.playercapture.PlayerCapture"
     ]
   },
@@ -31,8 +32,5 @@
     "fabric-api": "*",
     "minecraft": "~1.19",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }

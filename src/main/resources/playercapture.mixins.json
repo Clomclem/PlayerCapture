@@ -3,9 +3,8 @@
   "minVersion": "0.8",
   "package": "me.clomclem.playercapture.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
-  "client": [
+  "server": [
+    "ServerPlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
