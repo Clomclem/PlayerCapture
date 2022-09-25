@@ -15,6 +15,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+@SuppressWarnings("unused")
 @Mixin(ServerPlayer.class)
 public abstract class ServerPlayerMixin extends Player {
 
@@ -24,7 +25,8 @@ public abstract class ServerPlayerMixin extends Player {
 
     @Inject(method = "die", at = @At("TAIL"))
     private void onDeath(DamageSource damageSource, CallbackInfo ci) {
-        ItemStack head = PlayerHeadUtil.generateHeadFromPlayer(((Player)(Object)this));
-        ((ServerPlayer)(Object)this).drop(head, true);
+        ItemStack head = PlayerHeadUtil.generateHeadFromPlayer(this);
+        // It's unnecessary to use "((ServerPlayer)(Object)this)" since the mixin class already has the drop method (inherited from Player).
+        this.drop(head, true);
     }
 }
