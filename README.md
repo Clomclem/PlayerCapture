@@ -1,9 +1,24 @@
-# Fabric Example Mod
+# PlayerCapture
 
-## Setup
+A Fabric mod which allows you to capture players after they die.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+:warning: **This mod is server-only!**
 
-## License
+## Features (Most aren't implemented yet)
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+When a player dies, he will switch to spectator mode and along with dropping his items he'll drop a head with his name and texture,
+which when placed will respawn him normally.
+
+If the head is destroyed or removed in any way, the player will respawn.
+
+The head (in its dropped form) despawns after 5 minutes unless it is picked up.
+
+## Purpose
+
+This mod is mainly made with the intent that players will able to trap other players,
+offering many roleplay opportunities.
+
+## Credits
+
+Thanks to this Reddit post by Cade_-_ for the idea:
+https://www.reddit.com/r/MinecraftModIdeas/comments/sljzr7/player_capture_upon_death/
