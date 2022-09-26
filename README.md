@@ -4,7 +4,7 @@ A Fabric mod which allows you to capture players after they die.
 
 :warning: **This mod is server-only!**
 
-## Features (:warning: Most aren't implemented yet)
+## Features (Most aren't implemented yet)
 
 When a player dies, he will switch to spectator mode and along with dropping his items he'll drop a head with his name and texture,
 which when placed will respawn him normally.
